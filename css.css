@@ -1,0 +1,250 @@
+body {margin: 0;}
+.header {background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/background.jpg);
+         background-position: center;
+         background-size: cover;
+         height: 100vh;
+         position: relative;}
+.header img {height: 70px;
+            transition: 0.4s ease-in;}
+.header img:hover {transform: translate(0, -10px);}
+.header nav {display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 50px;}
+.header nav div a {position: relative;}
+.header a {text-decoration: none; 
+           padding: 12px 8px;
+           color: white;}
+.header nav div a::after{
+      content: '';
+      background:#dd000b;
+      position: absolute;
+      height: 3px;
+      width: 0;
+      left: 0;
+      bottom: 0;
+      transition: 0.5s;}
+.header nav div a:hover::after {width: 90%; 
+                                left: 4px;}
+.text {display: flex;
+      flex-direction: column;
+      position: absolute;
+      text-align: center;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%,-50%);} 
+.text h1 {font-size: 62px;
+      color: white;
+      margin-bottom: 5%;} 
+.text p {font-size: 20px;
+      color: white;
+      font-family: 'Abril Fatface', 'cursive'; 
+      margin-top: 0;}
+.text button {display: flex;
+             align-items: center; 
+             justify-content: space-evenly;
+             background: transparent;
+             padding:10px; 
+             width: 200px;
+             margin: auto; 
+             margin-top: 30px;
+             cursor: pointer;
+             border-radius: 25px;
+             color: white;
+             font-weight: bold;
+             font-size: 26px;
+             font-family: 'Black Ops One', cursive;
+             border: 2px solid #dd000b;
+             position: relative;
+             transition: 0.5s;}
+.text button::after {
+                  content: '';
+                  position: absolute;
+                  left: 0px;
+                  top: 0px;
+                  right: 0px;
+                  bottom: 0px;
+                  background: linear-gradient(rgba(20, 54, 192, 0.7),rgba(233, 10, 114, 0.7));
+                  opacity: 0;
+                  transition: all 1s;
+                  z-index: -1;
+                  border-radius: 25px;}
+.text button:hover::after {opacity: 1;}
+.text button:hover {transform: scale(1.1);
+                    border: none;}
+.galaxies {width: 90%;
+           margin: auto;
+           display: flex;
+           justify-content: space-evenly;
+           flex-wrap: wrap;}
+.galaxy {flex-basis: 45%;
+         position: relative;
+         overflow: hidden;
+         flex-wrap: wrap;}
+.galaxy img {width: 100%;
+            display: block;
+            border-radius: 25px;}
+.layer {background: rgba(226, 0, 0, 0.6);
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        opacity: 0; 
+        transition: 0.5s;
+        color:white;
+        font-size: 40px;
+        border-radius: 25px;}
+.layer:hover {opacity: 100%;
+              cursor: pointer;}
+.line {margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+      align-items: center;}
+.linee {height: 2px; 
+        width: 100px;
+        background-color: white;}
+.flex {display: flex;
+       justify-content: space-evenly;
+       width: 100%;
+       text-align: center;
+       flex-wrap: wrap;}
+.planet {width: 24%;
+         flex-wrap: wrap;}
+.planet img {overflow: hidden;
+             width: 100%;
+             border-radius: 50%;
+             transition: 0.5s;}
+.jupiter {margin-bottom: 7px;}
+.h1 {text-align: center;
+     color:#ffffff;
+     font-size: 40px;
+     text-shadow: 0 0 5px white;
+     animation: text 2s linear infinite;}
+@keyframes text {0%, 18%, 20%, 50.1%, 60.1%,65.1%, 80%, 90.1%,92%
+                {color: #000000;
+                 text-shadow: none;}
+                 30%, 50%, 60.1%,65%, 80.1%,90%,92.1%, 100%
+                {color:rgb(9, 155, 233);
+                 text-shadow: 0 0 10px #03bcf4,
+                 0 0 20px #03bef4
+                 0 0 40px #03bef4
+                 0 0 80px #03bef4
+                 0 0 160px #03bef4;}}
+.flex p {font-size: 24px;}
+.planet img:hover {cursor: pointer;
+                 transform: translate(0, -10px) scale(1.1);}
+.buy {margin-top: 50px;
+      display: flex;
+      justify-content: space-evenly;
+      padding: 10px;}
+.card {margin: 10px;
+       text-align: center;
+       background: #1f2641;
+       color: white;
+       box-shadow: 0 5px 25px rgba(1 1 1 /100%);
+       border-radius: 25px;
+       padding: 3px;
+       transition: 0.5s ease;}
+.poster img {width: 100%;}
+.describtion h2 { margin-top: 40px}
+.card button {background: rgb(218, 38, 7);
+              display: flex;
+              align-items: center; 
+              justify-content: space-evenly;
+              padding:10px; 
+              width: 140px;
+              margin: auto; 
+              margin-top: 30px;
+              margin-bottom: 10px;
+              cursor: pointer;
+              border-radius: 25px;
+              color: white;
+              font-weight: bold;
+              font-size: 26px;
+              font-family: 'Black Ops One', cursive;
+              border: 2px solid #dd000b;
+              position: relative;
+              transition: 0.5s ease;}
+.card:hover {transform: scale(1.1);}
+.card button:hover {transform: scale(1.1);
+                   background: rgb(0, 190, 0);}
+.circle {border-radius: 50%;
+         background: rgba(0,0,0,0.35);
+         width: 18.3529411765rem;
+         height: 18.3529411765rem;
+         position: relative;
+         display: flex;
+         justify-content: center;
+         align-items: center;}
+.andsec {background: url(images/back.jpg);
+         position: relative;
+         height: 100vh;
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         margin-top: 100px;
+         background-position: center;
+         background-size: cover;}
+.scircle {border-radius: 50%;
+          background: rgba(1, 1, 1, 0.5);
+          width: 17rem;
+          height: 17rem;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          text-align: center;}
+.id {position: relative;
+     color: white;
+     letter-spacing: 2px;
+     font-family: 'Sofia Pro', sans-serif;}
+.id p {font-weight: 700;
+       font-size: 1.2941176471rem;
+       font-style: italic;
+       margin: 12.7px;}
+.id a i {font-weight:bold;
+         font-size: 3rem;
+         color: #dd000b;}
+.id a i:hover {transform: translate(0, -10px) scale(1.2);}
+.bcircle {border:1px solid white;
+          border-radius: 50%;
+          background: rgba(0, 0, 0, 0);
+          width: 19.4rem;
+          height: 19rem;
+          position: absolute;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          transition: 0.5s ease;}
+.bcircle:hover {cursor: pointer; 
+                transform: scale(1.1);}
+footer {background: rgb(33, 45, 78);
+        padding: 1.25em 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 20vh;}
+footer a {color: white;
+          text-align: center;
+          font-size: 1em;
+          margin-top: 0.5em;}
+.bflex {position: relative;
+        background-color: rgba(9, 46, 51, 0.2);
+        margin: 200px 0px;}  
+.planet p {color: rgb(0, 0, 0);
+           font-weight: bold;} 
+#id {margin-top: 200px;}       
+
+
+
+
+
+
+
+
+
