@@ -76,8 +76,8 @@ body {margin: 0;}
            justify-content: center;
            flex-wrap: wrap;
            padding: 0.2em}
-.galaxy {display" flex;
-         flex-basis: 41%;
+.galaxy {display: flex;
+         flex-basis: 45.5%;
          flex-grow: 1;
          position: relative;
          overflow: hidden;
