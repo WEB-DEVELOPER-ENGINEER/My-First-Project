@@ -74,8 +74,7 @@ body {margin: 0;}
                     border: none;}
 .galaxies {display: flex;
            justify-content: center;
-           flex-wrap: wrap;
-           padding: 0.2em}
+           flex-wrap: wrap;}
 .galaxy {display" flex
          flex-basis: 40%;
          flex-grow: 1;
