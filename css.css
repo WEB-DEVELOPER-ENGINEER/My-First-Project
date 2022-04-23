@@ -139,10 +139,10 @@ body {margin: 0;}
                  transform: translate(0, -10px) scale(1.1);}
 .buy {margin-top: 50px;
       display: flex;
-      justify-content: space-evenly;
+      justify-content: center;
       padding: 10px;
       flex-wrap: wrap;}
-.card {margin: 10px;
+.card {margin: 5px;
        text-align: center;
        background: #1f2641;
        color: white;
