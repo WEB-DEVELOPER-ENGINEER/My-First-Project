@@ -78,7 +78,6 @@ body {margin: 0;}
            padding: 0.2em}
 .galaxy {display: flex;
          flex-basis: 30%;
-         flex-grow: 1;
          position: relative;
          overflow: hidden;
          margin: 14px;
