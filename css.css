@@ -140,7 +140,8 @@ body {margin: 0;}
 .buy {margin-top: 50px;
       display: flex;
       justify-content: space-evenly;
-      padding: 10px;}
+      padding: 10px;
+      flex-wrap: wrap;}
 .card {margin: 10px;
        text-align: center;
        background: #1f2641;
@@ -148,7 +149,12 @@ body {margin: 0;}
        box-shadow: 0 5px 25px rgba(1 1 1 /100%);
        border-radius: 25px;
        padding: 3px;
-       transition: 0.5s ease;}
+       transition: 0.5s ease;
+       display: flex;
+       flex-direction: column;
+       flex-basis: 31%;}
+.poster {display: flex; 
+         flex-grow: 1;}
 .poster img {width: 100%;}
 .describtion h2 { margin-top: 40px}
 .card button {background: rgb(218, 38, 7);
